@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bounce-in-top {
+-webkit-animation: bounce-in-top 5.1s infinite both;
+    animation: bounce-in-top 5.1s infinite both;
+}
+
+@-webkit-keyframes bounce-in-top {
+0% {
+-webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+-webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+opacity: 0;
+}
+38% {
+-webkit-transform: translateY(0);
+    transform: translateY(0);
+-webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+opacity: 1;
+}
+55% {
+-webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+-webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+72% {
+-webkit-transform: translateY(0);
+    transform: translateY(0);
+-webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+81% {
+-webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+-webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+90% {
+-webkit-transform: translateY(0);
+    transform: translateY(0);
+-webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+95% {
+-webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+-webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+100% {
+-webkit-transform: translateY(0);
+    transform: translateY(0);
+-webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+}
+@keyframes bounce-in-top {
+0% {
+-webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+-webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+opacity: 0;
+}
+38% {
+-webkit-transform: translateY(0);
+    transform: translateY(0);
+-webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+opacity: 1;
+}
+55% {
+-webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+-webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+72% {
+-webkit-transform: translateY(0);
+    transform: translateY(0);
+-webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+81% {
+-webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+-webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+90% {
+-webkit-transform: translateY(0);
+    transform: translateY(0);
+-webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+95% {
+-webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+-webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+100% {
+-webkit-transform: translateY(0);
+    transform: translateY(0);
+-webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+}
+.img1{
+opacity: 0.3;
+
+}
+.img1:hover{
+opacity:1;
+transition: 0.2s ease;
+}
+.tracking-in-expand {
+-webkit-animation: tracking-in-expand 3.1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 3.1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* @-webkit-keyframes tracking-in-expand {
+0% {
+letter-spacing: -0.5em;
+opacity: 0;
+}
+40% {
+opacity: 0.6;
+}
+100% {
+opacity: 1;
+}
+} */
+@keyframes tracking-in-expand {
+0% {
+letter-spacing: -0.5em;
+opacity: 0;
+}
+40% {
+opacity: 0.6;
+}
+100% {
+opacity: 1;
+}
+}
+#con {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    width: 800px; /* Set the width of the content */
+    border-radius: 20px;
+    
+    }
+#collap{
+    background-color: #E5E4E2;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 800px; /* Set the width of the collapsible button */
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+    border-radius: 20px;   
+}
+.active, #collap:hover {
+    background-color: #ccc6c6;
+    color:#000;
+    width: 800px; /* Set the width of the collapsible button */
+    }
+
+    #collap:after {
+        content: '\002B';
+        color: #6082B6;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        }
+.collapsible {
+background-color: #fff;
+color: #6082B6;
+cursor: pointer;
+padding: 18px;
+width: 500px; /* Set the width of the collapsible button */
+border: none;
+text-align: left;
+outline: none;
+font-size: 17px;
+border-radius: 20px;
+}
+
+.active, .collapsible:hover {
+background-color: #fff;
+color:#193050;
+width: 500px; /* Set the width of the collapsible button */
+}
+
+.collapsible:after {
+content: '\002B';
+color: #6082B6;
+font-weight: bold;
+float: right;
+margin-left: 5px;
+}
+
+.active:after {
+content: "\2212";
+}
+
+.content {
+padding: 0 18px;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+background-color: #f1f1f1;
+width: 500px; /* Set the width of the content */
+border-radius: 20px;
+
+}
+#slide-in-left {
+-webkit-animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* @-webkit-keyframes slide-in-left {
+0% {
+-webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translateX(0);
+    transform: translateX(0);
+opacity: 1;
+}
+} */
+@keyframes slide-in-left {
+0% {
+-webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translateX(0);
+    transform: translateX(0);
+opacity: 1;
+}
+}
+#slide-in-right {
+-webkit-animation: slide-in-right 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* @-webkit-keyframes slide-in-right {
+0% {
+-webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translateX(0);
+    transform: translateX(0);
+opacity: 1;
+}
+} */
+@keyframes slide-in-right {
+0% {
+-webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translateX(0);
+    transform: translateX(0);
+opacity: 1;
+}
+}
+.scale-up-left {
+-webkit-animation: scale-up-left 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-left 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes scale-up-left {
+0% {
+-webkit-transform: scale(0.5);
+    transform: scale(0.5);
+-webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+100% {
+-webkit-transform: scale(1);
+    transform: scale(1);
+-webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+}
+
+#scale-up-right {
+-webkit-animation: scale-up-right 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-right 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@keyframes scale-up-right {
+0% {
+-webkit-transform: scale(0.5);
+    transform: scale(0.5);
+-webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+100% {
+-webkit-transform: scale(1);
+    transform: scale(1);
+-webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+}
+@-webkit-keyframes scale-up-right {
+0% {
+-webkit-transform: scale(0.5);
+    transform: scale(0.5);
+-webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+100% {
+-webkit-transform: scale(1);
+    transform: scale(1);
+-webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+}
+
+#progress:hover{
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+}
+
+.card h5:hover{
+color:#6082B6;
+}
+#scale-up-hor-left {
+-webkit-animation: scale-up-hor-left 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-hor-left 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-hor-left {
+0% {
+-webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+-webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+}
+100% {
+-webkit-transform: scaleX(1);
+    transform: scaleX(1);
+-webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+}
+}
+@keyframes scale-up-hor-left {
+0% {
+-webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+-webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+}
+100% {
+-webkit-transform: scaleX(1);
+    transform: scaleX(1);
+-webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+}
+}
+#btn:hover{
+background-color:#96acce;
+border:none;
+}
+#h3:hover{
+color:#E5E4E2;
+}
+#h3{
+font-size: 30px;
+font-weight: 700;
+}
+#scale-up-hor-center {
+-webkit-animation: scale-up-hor-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-hor-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-hor-center {
+0% {
+-webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+}
+100% {
+-webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+}
+@keyframes scale-up-hor-center {
+0% {
+-webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+}
+100% {
+-webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+}
+.btn-list {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .btn-list li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+ #active{
+    background-color: #6082B6;
+    color:white;
+ }
+
+  .btn-list li a {
+    display: inline-block;
+    padding: 9px 17px;
+
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .btn-list li a:hover {
+    background-color:#6082B6;
+    color: #fff;
+  }
+  .ul li{
+    list-style: none;
+    font-size: 20px;
+  }
+
+
+  
+ 
+  
+  .container1 {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 150px); /* Adjusted to 8 rows */
+  }
+  
+  
+  
+  
+  .img {
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .item-4 {
+    grid-row: 2/5;
+  }
+  
+  .item-5 {
+    grid-row: 2/6;
+  }
+  
+  .item-6 {
+    grid-row: 2/4;
+  }
+  
+  .item-7 {
+    grid-row: 5/6;
+  }
+  
+  .item-8 {
+    grid-row: 4/6;
+  }
+
+  .col-lg-6 {
+    /* width: 50%; */
+    float: left;
+    padding: 20px;
+  }
+  .form {
+    border: 1px solid #fff;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+  label {
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="submit"] {
+    background-color:#6082B6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 15px;
+
+    border: none;
+    outline: none;
+    background-color:	#0096FF;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+    background-color:#193050;
+  }
+
+  #scale-up-center {
+	-webkit-animation: scale-up-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-31 2:9:24
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  #scale-up-bottom {
+	-webkit-animation: scale-up-bottom 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-bottom 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-31 2:12:26
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-up-bottom {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+  }
+  @keyframes scale-up-bottom {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+  }
+
+  #scale-in-hor-center {
+	-webkit-animation: scale-in-hor-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-31 2:19:23
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-in-hor-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-in-hor-center {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-hor-center {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  
